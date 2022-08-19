@@ -32,6 +32,8 @@ import {
     Unit,
 } from './enums';
 
+import { StateSpace } from './states';
+
 import {
     CONTRACT_TERMSETS,
     TermsetOfAnnuity,
@@ -64,7 +66,7 @@ import {
     TermsetOfPlainVanillaSwap,
     TermsetOfTotalReturnSwap,
     TermsetOfUndefinedMaturityProfile,
-} from './termsets';
+} from './terms';
 
 export {
     // Enumerations.
@@ -95,6 +97,8 @@ export {
     ScalingEffect,
     Seniority,
     Unit,
+    // States.
+    StateSpace,
     // Termsets.
     CONTRACT_TERMSETS,
     TermsetOfAnnuity,
