@@ -2,10 +2,10 @@
  *  N.B. Auto-generated using actus-mp
  */
 
+import * as core from './core';
+
 import {
     ENUM_SET,
-    ReferenceRole,
-    ReferenceType,
     ArrayFixedVariable,
     ArrayIncreaseDecrease,
     BusinessDayConvention,
@@ -27,12 +27,12 @@ import {
     OptionType,
     PenaltyType,
     PrepaymentEffect,
+    ReferenceRole,
+    ReferenceType,
     ScalingEffect,
     Seniority,
     Unit,
 } from './enums';
-
-import { StateSpace } from './states';
 
 import {
     CONTRACT_TERMSETS,
@@ -69,10 +69,10 @@ import {
 } from './terms';
 
 export {
+    // Core.
+    core,
     // Enumerations.
     ENUM_SET,
-    ReferenceRole,
-    ReferenceType,
     ArrayFixedVariable,
     ArrayIncreaseDecrease,
     BusinessDayConvention,
@@ -94,11 +94,11 @@ export {
     OptionType,
     PenaltyType,
     PrepaymentEffect,
+    ReferenceRole,
+    ReferenceType,
     ScalingEffect,
     Seniority,
     Unit,
-    // States.
-    StateSpace,
     // Termsets.
     CONTRACT_TERMSETS,
     TermsetOfAnnuity,

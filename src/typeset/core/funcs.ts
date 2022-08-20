@@ -2,7 +2,7 @@
  *  N.B. Auto-generated using actus-mp
  */
 
-import { StateSpace } from '../states';
+import { StateSpace } from './states';
 
 /**
  *

@@ -105,3 +105,6 @@ dist
 
 # tsc build / generate output
 build
+
+# Temporary files.
+tmp
