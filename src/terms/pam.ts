@@ -83,7 +83,7 @@ export class PrincipalAtMaturityTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // End Of Month Convention.
     endOfMonthConvention: enums.EndOfMonthConvention = enums.EndOfMonthConvention.SD;
@@ -149,7 +149,7 @@ export class PrincipalAtMaturityTermset extends core.Termset {
     optionExerciseEndDate?: Date;
 
     // Penalty Rate.
-    penaltyRate?: number = null;
+    penaltyRate?: number = 0.0;
 
     // Penalty Type.
     penaltyType: enums.PenaltyType = enums.PenaltyType.N;
@@ -161,7 +161,7 @@ export class PrincipalAtMaturityTermset extends core.Termset {
     periodFloor?: number;
 
     // Premium Discount At IED.
-    premiumDiscountAtIED?: number = null;
+    premiumDiscountAtIED?: number = 0.0;
 
     // Prepayment Effect.
     prepaymentEffect: enums.PrepaymentEffect = enums.PrepaymentEffect.N;
@@ -182,7 +182,7 @@ export class PrincipalAtMaturityTermset extends core.Termset {
     rateMultiplier: number = 1.0;
 
     // Rate Spread.
-    rateSpread?: number = null;
+    rateSpread?: number = 0.0;
 
     // Scaling Effect.
     scalingEffect: enums.ScalingEffect = enums.ScalingEffect.OOO;

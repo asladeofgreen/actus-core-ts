@@ -38,7 +38,7 @@ export class ForeignExchangeOutrightTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // Delivery Settlement.
     deliverySettlement: enums.DeliverySettlement = enums.DeliverySettlement.D;

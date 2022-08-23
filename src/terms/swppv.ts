@@ -53,7 +53,7 @@ export class PlainVanillaSwapTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // Delivery Settlement.
     deliverySettlement: enums.DeliverySettlement = enums.DeliverySettlement.D;
@@ -110,7 +110,7 @@ export class PlainVanillaSwapTermset extends core.Termset {
     rateMultiplier: number = 1.0;
 
     // Rate Spread.
-    rateSpread?: number = null;
+    rateSpread?: number = 0.0;
 
     // Seniority.
     seniority?: enums.Seniority;

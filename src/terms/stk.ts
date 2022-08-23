@@ -50,7 +50,7 @@ export class StockTermset extends core.Termset {
     marketValueObserved?: number;
 
     // Next Dividend Payment Amount.
-    nextDividendPaymentAmount?: number = null;
+    nextDividendPaymentAmount?: number = 0.0;
 
     // Non Performing Date.
     nonPerformingDate?: Date;

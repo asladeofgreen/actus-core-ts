@@ -1,9 +1,17 @@
 import * as enums from '../enums';
 
 /**
+ *  Reference between contracts in a hierarchy.
+ */
+export class ContractReference {
+    // Contract Identifier :: Unique identifier of a contract.  If the system is used on a single firm level, an internal unique ID can be generated. If used on a national or globally level, a globally unique ID is required.
+    contractID: string;    
+}
+
+/**
  *  Set of terms applicable to a financial contract.
  */
-export abstract class Termset {
+ export abstract class Termset {
     // Contract Identifier :: Unique identifier of a contract.  If the system is used on a single firm level, an internal unique ID can be generated. If used on a national or globally level, a globally unique ID is required.
     contractID: string;
 
@@ -28,3 +36,4 @@ export abstract class Termset {
         this.contractPerformance = contractPerformance;
     }
 }
+

@@ -17,7 +17,7 @@ export class CapFloorTermset extends core.Termset {
     contractDealDate?: Date;
 
     // Contract Structure.
-    contractStructure?: typing.List[contracts.ContractReference] = null;
+    contractStructure?: Array<core.ContractReference> = [];
 
     // Counterparty Identifier.
     counterpartyID?: string;
@@ -32,7 +32,7 @@ export class CapFloorTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // Grace Period.
     gracePeriod: core.Period;

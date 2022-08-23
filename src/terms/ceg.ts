@@ -23,7 +23,7 @@ export class GuaranteeTermset extends core.Termset {
     contractDealDate?: Date;
 
     // Contract Structure.
-    contractStructure?: typing.List[contracts.ContractReference] = null;
+    contractStructure?: Array<core.ContractReference> = [];
 
     // Counterparty Identifier.
     counterpartyID?: string;
@@ -35,7 +35,7 @@ export class GuaranteeTermset extends core.Termset {
     creatorID?: string;
 
     // Credit Event Type Covered.
-    creditEventTypeCovered: typing.List[enums.CreditEventTypeCovered] = enums.CreditEventTypeCovered.DF;
+    creditEventTypeCovered: Array<enums.CreditEventTypeCovered> = [];
 
     // Currency.
     currency?: string;
@@ -50,7 +50,7 @@ export class GuaranteeTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // End Of Month Convention.
     endOfMonthConvention: enums.EndOfMonthConvention = enums.EndOfMonthConvention.SD;

@@ -17,34 +17,34 @@ export class ExoticLinearAmortizerTermset extends core.Termset {
     accruedInterest?: number;
 
     // Array Cycle Anchor Date Of Interest Payment.
-    arrayCycleAnchorDateOfInterestPayment?: typing.List[Date] = null;
+    arrayCycleAnchorDateOfInterestPayment?: Array<Date> = [];
 
     // Array Cycle Anchor Date Of Principal Redemption.
-    arrayCycleAnchorDateOfPrincipalRedemption?: typing.List[Date] = null;
+    arrayCycleAnchorDateOfPrincipalRedemption?: Array<Date> = [];
 
     // Array Cycle Anchor Date Of Rate Reset.
-    arrayCycleAnchorDateOfRateReset?: typing.List[Date] = null;
+    arrayCycleAnchorDateOfRateReset?: Array<Date> = [];
 
     // Array Cycle Of Interest Payment.
-    arrayCycleOfInterestPayment?: typing.List[core.Cycle];
+    arrayCycleOfInterestPayment?: Array<core.Cycle>;
 
     // Array Cycle Of Principal Redemption.
-    arrayCycleOfPrincipalRedemption?: typing.List[core.Cycle];
+    arrayCycleOfPrincipalRedemption?: Array<core.Cycle>;
 
     // Array Cycle Of Rate Reset.
-    arrayCycleOfRateReset?: typing.List[core.Cycle];
+    arrayCycleOfRateReset?: Array<core.Cycle>;
 
     // Array Fixed Variable.
-    arrayFixedVariable?: typing.List[enums.ArrayFixedVariable] = null;
+    arrayFixedVariable?: Array<enums.ArrayFixedVariable> = [];
 
     // Array Increase Decrease.
-    arrayIncreaseDecrease?: typing.List[enums.ArrayIncreaseDecrease] = null;
+    arrayIncreaseDecrease?: Array<enums.ArrayIncreaseDecrease> = [];
 
     // Array Next Principal Redemption Payment.
-    arrayNextPrincipalRedemptionPayment?: typing.List[number] = null;
+    arrayNextPrincipalRedemptionPayment?: Array<number> = [];
 
     // Array Rate.
-    arrayRate?: typing.List[number] = null;
+    arrayRate?: Array<number> = [];
 
     // Business Day Convention.
     businessDayConvention: enums.BusinessDayConvention = enums.BusinessDayConvention.NOS;
@@ -104,7 +104,7 @@ export class ExoticLinearAmortizerTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // End Of Month Convention.
     endOfMonthConvention: enums.EndOfMonthConvention = enums.EndOfMonthConvention.SD;
@@ -176,7 +176,7 @@ export class ExoticLinearAmortizerTermset extends core.Termset {
     optionExerciseEndDate?: Date;
 
     // Penalty Rate.
-    penaltyRate?: number = null;
+    penaltyRate?: number = 0.0;
 
     // Penalty Type.
     penaltyType: enums.PenaltyType = enums.PenaltyType.N;
@@ -188,7 +188,7 @@ export class ExoticLinearAmortizerTermset extends core.Termset {
     periodFloor?: number;
 
     // Premium Discount At IED.
-    premiumDiscountAtIED?: number = null;
+    premiumDiscountAtIED?: number = 0.0;
 
     // Prepayment Effect.
     prepaymentEffect: enums.PrepaymentEffect = enums.PrepaymentEffect.N;

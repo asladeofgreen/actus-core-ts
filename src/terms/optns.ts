@@ -23,7 +23,7 @@ export class OptionTermset extends core.Termset {
     contractDealDate?: Date;
 
     // Contract Structure.
-    contractStructure?: typing.List[contracts.ContractReference] = null;
+    contractStructure?: Array<core.ContractReference> = [];
 
     // Counterparty Identifier.
     counterpartyID?: string;
@@ -44,7 +44,7 @@ export class OptionTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // Delivery Settlement.
     deliverySettlement: enums.DeliverySettlement = enums.DeliverySettlement.D;

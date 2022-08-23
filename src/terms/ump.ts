@@ -59,7 +59,7 @@ export class UndefinedMaturityProfileTermset extends core.Termset {
     delinquencyPeriod: core.Period;
 
     // Delinquency Rate.
-    delinquencyRate?: number = null;
+    delinquencyRate?: number = 0.0;
 
     // End Of Month Convention.
     endOfMonthConvention: enums.EndOfMonthConvention = enums.EndOfMonthConvention.SD;
@@ -101,7 +101,7 @@ export class UndefinedMaturityProfileTermset extends core.Termset {
     priceAtTerminationDate?: number;
 
     // Rate Spread.
-    rateSpread?: number = null;
+    rateSpread?: number = 0.0;
 
     // Seniority.
     seniority?: enums.Seniority;
