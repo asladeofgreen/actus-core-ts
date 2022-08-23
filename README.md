@@ -1,2 +1,2 @@
 # actus-core-js
-Actus protocol javascript core implementation
+Actus protocol typescript core implementation
